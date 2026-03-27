@@ -11,7 +11,7 @@ const serviceAreas = [
   'Baltimore City', 'Towson', 'Columbia', 'Glen Burnie', 'Dundalk',
   'Ellicott City', 'Catonsville', 'Annapolis', 'Pasadena', 'Parkville',
   'Essex', 'Middle River', 'Rosedale', 'Severna Park', 'Laurel',
-  'Jessup', 'Elkridge', 'Brooklyn Park', 'Halethorpe', 'Arbutus','Montreal',
+  'Jessup', 'Elkridge', 'Brooklyn Park', 'Halethorpe', 'Arbutus',
 ];
 
 export default function ContactPage() {
