@@ -21,11 +21,12 @@ import SmartLockInstallation from './pages/SmartLockInstallation';
 
 
 function App() {
+  const routerBaseName = import.meta.env.BASE_URL || '/';
 
   return (
     <HelmetProvider>
       <QueryClientProvider client={queryClientInstance}>
-        <Router>
+        <Router basename={routerBaseName}>
           <ScrollToTop />
           <Routes>
             <Route path="/" element={<Home />} />

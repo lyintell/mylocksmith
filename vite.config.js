@@ -4,6 +4,8 @@ import { defineConfig } from 'vite'
 
 // https://vite.dev/config/
 export default defineConfig({
+  // Allow overriding the base path for GitHub Pages (e.g. /<repo>/)
+  base: process.env.VITE_BASE_PATH || '/',
   logLevel: 'error', // Suppress warnings, only show errors
   server: {
     host: '127.0.0.1',
