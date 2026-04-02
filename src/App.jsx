@@ -21,7 +21,8 @@ import SmartLockInstallation from './pages/SmartLockInstallation';
 
 
 function App() {
-  const routerBaseName = import.meta.env.BASE_URL || '/';
+  const rawBaseUrl = import.meta.env.BASE_URL || '/';
+  const routerBaseName = rawBaseUrl === './' ? '/' : rawBaseUrl;
 
   return (
     <HelmetProvider>

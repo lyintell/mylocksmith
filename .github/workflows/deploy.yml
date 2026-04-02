@@ -28,7 +28,7 @@ jobs:
       - name: Build site
         run: npm run build
         env:
-          VITE_BASE_PATH: "/"
+          VITE_BASE_PATH: "./"
       - name: Add SPA fallback page
         run: cp dist/index.html dist/404.html
       - name: Upload build artifact
